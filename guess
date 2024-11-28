@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+import random
+
+print("guess the number or you die")
+number = random.randint(1,5)
+guess = None
+
+
+while guess != number:
+    guess = int(input("guess a number between 1 and 5:"))
+    if guess < number:
+        print("too low you will die")
+    elif guess > number:
+        print("too big ur gonna die")
+    else:
+        print("ok you're safe")
